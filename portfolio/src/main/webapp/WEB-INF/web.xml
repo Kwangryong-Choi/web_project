@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="https://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <display-name>portfolio</display-name>
+	
+	<servlet>
+		<servlet-name>mail_list</servlet-name>
+		<servlet-class>portfolio.mail_list</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>mail_list</servlet-name>
+		<url-pattern>/mail_list.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>mailok</servlet-name>
+		<servlet-class>portfolio.mailok</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>mailok</servlet-name>
+		<url-pattern>/mailok.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>mail_del</servlet-name>
+		<servlet-class>portfolio.mail_del</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>mail_del</servlet-name>
+		<url-pattern>/mail_del.do</url-pattern>
+	</servlet-mapping>
+	
+</web-app>

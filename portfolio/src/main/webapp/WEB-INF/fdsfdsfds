@@ -1,0 +1,2 @@
+select midx,to_name,to_mail,subject,context,maildate,(select count(*) from kr_mail) as total
+from kr_mail order by midx desc limit 0,2;
